@@ -3,6 +3,7 @@ const { Typed } = window;
 
 const typed2 = new Typed('#strike', {
   strings: [
+    '今いいですか？',
     'hello',
     'hi',
     'hey',

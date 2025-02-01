@@ -3,8 +3,7 @@
     <div class="hero">
       <div id="plsstop">
         <h1 class="name">
-          no
-          <span id="strike">hello</span>
+          <span id="strike">hello</span> とだけ言うな
         </h1>
       </div>
       <span class="subtitle">{{ _("header.subtitle") }}</span>
@@ -103,36 +102,6 @@
     <p>
     </p>
 
-    <section class="other-languages">
-      <p>
-        {{ _('footer.languages') }}
-      </p>
-
-      <ul>
-      {% for locale in locales %}
-        <li
-          ><a
-            href="{%- relocalizePath locale.path, page.url -%}"
-            class="lang-chooser"
-            data-lang="{{ locale.path }}"
-            hreflang="{{ locale.path }}"
-          >{{ locale.name }}</a
-        ></li>
-      {% endfor %}
-      </ul>
-    </section>
-
-    <script>
-      const langChoosers = document.querySelectorAll('.lang-chooser');
-
-      for (const langChooser of langChoosers) {
-        const lang = langChooser.dataset.lang;
-
-        langChooser.addEventListener('click', (evt) => {
-          localStorage.setItem('lang', lang);
-        });
-      }
-    </script>
   </footer>
 </div>
 

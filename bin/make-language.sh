@@ -14,6 +14,6 @@ fi
 
 LANGUAGE="${1}"
 
-# assume English as a stable base
-cp -r "./src/en" "./src/${LANGUAGE}"
-mv "./src/${LANGUAGE}/en.11tydata.ts" "./src/${LANGUAGE}/${LANGUAGE}.11tydata.ts"
+# assume Japanese as a stable base
+cp -r "./src/ja" "./src/${LANGUAGE}"
+mv "./src/${LANGUAGE}/ja.11tydata.ts" "./src/${LANGUAGE}/${LANGUAGE}.11tydata.ts"
