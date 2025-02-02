@@ -2,7 +2,7 @@
 
 Hello!
 
-https://nohello.net/
+https://nohello.jp/
 
 ## Translators
 
